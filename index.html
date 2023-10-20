@@ -9,10 +9,14 @@
 <body>
     <div class="header-container">
         <div class="menu">
-            <a href="#" class="links">Header Logo</a>
-            <a href="#" class="links">Header link one</a>
-            <a href="#" class="links">Header link two</a>
-            <a href="#" class="links">Header link three</a>
+            <div class="logo">
+              <a href="#" class="logo-link">Header Logo</a>
+            </div>
+            <div class="links">
+            <a href="#" class="link">Header link one</a>
+            <a href="#" class="link">Header link two</a>
+            <a href="#" class="link">Header link three</a>
+            </div>
         </div>
         <div class="header">
             <div class="header-leftContainer">
@@ -20,10 +24,12 @@
                 <p class="header-subtext">This website has some subtext that goes here under the 
                     main title. It's a smaller font the color is lower 
                     contrast</p>
-                <button>Sign up</button>
+                <button class="header-button">Sign up</button>
             </div>
             <div class="header-rightContainer">
-                <p>This is a place holder for an image</p>
+                <div class="header-box">
+                <p class="text">This is a place holder for an image</p>
+                </div>
             </div>
         </div>
     </div>
@@ -60,14 +66,16 @@
     <div class="signUp-section">
         <div class="signUp-container">
             <div class="signUp-text">
-                <p>Call to action! it's time!</p>
-                <p>Sign up for our product by clicking that button right over there!</p>
+                <p class="text-action">Call to action! it's time!</p>
+                <p class="text-signUp">Sign up for our product by clicking that button right over there!</p>
             </div>
-            <button>Sign up</button>
+            <div class="container-button">
+                <button class="signUp-button">Sign up</button>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <p>Copyright The Odin Project 2021</p>
+    <div class="footer-container">
+        <p class="footer">Copyright The Odin Project 2021</p>
     </div>
 </body>
 </html>
