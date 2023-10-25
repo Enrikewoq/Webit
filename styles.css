@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body{
     color: white;
     padding: 0;
@@ -6,30 +10,40 @@ body{
     display: flex;
     flex-direction: column;
 }
-.header, .quote, .content-container, .signUp-container {
-    max-width: 800px;
-}
-.header-container, .content, .box-container {
+.menu-container, 
+.header-container,
+.content-container, 
+.quote-section-container, 
+.signUp-container,
+.box-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
-.header-container {
+.menu,
+.header,
+.content,
+.container,
+.quote-section,
+.singUp {
+    justify-content: space-between;
+    display: flex;
+    max-width: 900px;
+    padding:15px;
+}
+.header-maincontainer {
     background-color: #1f2937; 
 }
-.menu {
-    display: flex;
-    justify-content:space-between;
-}
-.header {
-    display: flex;
-    flex-grow: 1;
-}
-.logo-link {
+
+.menu-logo {
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    width: 900px;
 }
 .header-maintext{
     font-size: 48px;
@@ -44,9 +58,6 @@ ul {
     list-style: none;
     display: flex;
 }
-.header-leftContainer {
-
-}
 .header-button{
     background-color: #3382F6;
     padding: 5px 25px 5px 25px;
@@ -57,10 +68,8 @@ ul {
     flex: none;
 }
 .header-rightContainer {
-    border:#E5E7EB solid;
     display: flex;
     align-items: center;
-    
 }
 .header-box {
     background-color: #848991;
@@ -69,16 +78,33 @@ ul {
 }
 .content{
     color:#1f2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .content-phrase {
     font-size: 36px;
     font-weight: bold;
 }
-.content-container {
-    display: flex;
-}
 .box-container {
+    display: flex;
+    flex-shrink: 1;
+    width: 900px;
+    border: #3382F6 solid;
+}
+.container {
     flex-wrap: wrap;
+    border: #848991 solid;
+    justify-content: center;
+    min-width: 0;
+}
+.box-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    width: 100px;
 }
 .box {
     width: 100px;
