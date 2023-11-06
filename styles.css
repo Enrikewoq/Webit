@@ -13,9 +13,10 @@ body{
 .menu-container, 
 .header-container,
 .content-container, 
-.quote-section-container, 
 .signUp-container,
-.box-container {
+.box-container,
+.quote-section,
+.signUp-section {
     display: flex;
     justify-content: center;
 }
@@ -23,27 +24,45 @@ body{
 .header,
 .content,
 .container,
-.quote-section,
-.singUp {
+.quote-container,
+.signUp {
     justify-content: space-between;
     display: flex;
-    max-width: 900px;
+    max-width: 1000px;
     padding:15px;
 }
 .header-maincontainer {
     background-color: #1f2937; 
 }
-
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
 .menu-logo {
     color: white;
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
     display: flex;
     align-items: center;
+    width: 50%;
 }
-.menu {
-    width: 900px;
+ul, .menu-links-container {
+    display: flex;
+    list-style: none;
+    min-width: 400px;
+}
+.menu-links{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.list {
+    display: flex;
+}
+.header {
+    padding-top: 100px;
+    padding-bottom: 130px;
 }
 .header-maintext{
     font-size: 48px;
@@ -54,95 +73,24 @@ body{
     color: #E5E7EB;
     text-decoration: none;
 }
-ul {
-    list-style: none;
-    display: flex;
-}
 .header-button{
     background-color: #3382F6;
-    padding: 5px 25px 5px 25px;
+    padding: 10px 40px 10px 40px;
+    margin-top: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     color: white;
     display: flex;
     flex: none;
 }
+.header-leftContainer {
+    width: 50%;
+    padding-right: 40px;
+}
 .header-rightContainer {
     display: flex;
     align-items: center;
-}
-.header-box {
-    background-color: #848991;
-    padding: 50px;
-    max-width: 200px;
-}
-.content{
-    color:#1f2937;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.content-phrase {
-    font-size: 36px;
-    font-weight: bold;
-}
-.box-container {
-    display: flex;
-    flex-shrink: 1;
-    width: 900px;
-    border: #3382F6 solid;
-}
-.container {
-    flex-wrap: wrap;
-    border: #848991 solid;
-    justify-content: center;
-    min-width: 0;
-}
-.box-item {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
-    align-items: center;
-    width: 100px;
-}
-.box {
-    width: 100px;
-    height: 100px;
-    border: solid #3382F6;
-    border-radius: 10px;
-}
-.quote-section {
-    background-color:#E5E7EB;
-}
-.quote-section, .signUp-section {
-    display: flex;
-    justify-content: center;
-}
-.quote {
-    color: #1f2937;
-    font-style: italic;
-    font-size: 36px;
-}
-.signUp-section {
-    padding: 50px 0 50px 0;
-}
-.signUp-container {
-    background-color:#3382F6;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-}
-.signUp-text {
-    padding: 10px 70px 10px 70px;
-}
-.text-action {
-    font-weight: bold;
-    margin-bottom: 0px;
-}
-.text-signUp {
-    margin-top: 5px;
+    width: 50%;
 }
 .container-button {
     padding-top: 10px;
@@ -150,16 +98,113 @@ ul {
     align-items: center;
     padding-right: 70px;
 }
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #848991;
+    padding: 50px;
+    width: 500px;
+    height: 140px;
+}
+.content{
+    color:#1f2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 100px 0;
+}
+.content-phrase {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0 40px 0;
+}
+.box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    border: solid #3382F6 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.content-text {
+    text-align: center;
+}
+.quote-section {
+    background-color:#E5E7EB;
+}
+.quote-container {
+    padding-top: 20px;
+}
+.quote {
+    color: #1f2937;
+    font-style: italic;
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    padding:100px;
+}
+.quote-author {
+    text-align: end;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    marging-top: ;
+}
+.signUp-section {
+    padding: 100px;
+}
+.signUp-container {
+    background-color:#3382F6;
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    width: 1000px;
+}
+.signUp{
+    justify-content: space-between;
+    gap: 150px;
+}
+.signUp-text-container {
+}
+.text-action {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.text-signUp {
+    margin-top: 5px;
+    font-size: 18px;
+}
+.signUp-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .signUp-button {
     background-color: #3382F6;
     color: white;
     border:solid  white 1px;
-    border-radius: 5px;
-    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+    padding: 10px 40px 10px 40px;
     display: flex;
     flex: none;
 }
 .footer-container {
     background-color: #1f2937;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
